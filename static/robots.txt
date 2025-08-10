@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # サイトマップの場所
-Sitemap: {{ .Site.BaseURL }}sitemap.xml
+Sitemap: https://slightlysimple.net/sitemap.xml
 
 # 管理画面やプライベートページをブロック
 Disallow: /admin/

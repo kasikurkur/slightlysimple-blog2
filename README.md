@@ -2,6 +2,8 @@
 
 ChatGPTを活用した調査結果をまとめるブログサイトです。Hugo + GitHub Pages + AdSenseによる収益化システムを構築しています。
 
+**サイトURL**: https://slightlysimple.net
+
 ## 🚀 特徴
 
 - **静的サイトジェネレーター**: Hugo + PaperMod テーマ
