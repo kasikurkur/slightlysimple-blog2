@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+      "Bash(grep:*)",
+      "Bash(gh api:*)",
+      "Bash(npm ci:*)"
+    ],
+    "deny": []
+  }
+}
