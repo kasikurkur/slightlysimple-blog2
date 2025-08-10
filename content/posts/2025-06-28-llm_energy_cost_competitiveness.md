@@ -76,5 +76,3 @@ description: "Google、Anthropic、OpenAI、xAIの省エネ性能とコスト競
 
 ---
 
-*執筆：秋山 幸太*
-
