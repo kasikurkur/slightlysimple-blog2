@@ -1,6 +1,6 @@
-# ChatGPT調査結果ブログ
+# slightlysimple
 
-ChatGPTを活用した調査結果をまとめるブログサイトです。Hugo + GitHub Pages + AdSenseによる収益化システムを構築しています。
+日常で役立つ技術的なtipsを調べて説明するブログサイトです。Hugo + GitHub Pages + AdSenseによる収益化システムを構築しています。
 
 **サイトURL**: https://slightlysimple.net
 

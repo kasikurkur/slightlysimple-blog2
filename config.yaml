@@ -1,6 +1,6 @@
 baseURL: 'https://slightlysimple.net'
 languageCode: 'ja-jp'
-title: 'ChatGPT調査結果ブログ'
+title: 'slightlysimple'
 theme: 'PaperMod'
 
 enableRobotsTXT: true
@@ -29,9 +29,9 @@ minify:
 
 params:
   env: production
-  title: ChatGPT調査結果ブログ
-  description: "ChatGPTを使った調査結果をまとめたブログです"
-  keywords: [ChatGPT, AI, 調査, 研究, ブログ]
+  title: slightlysimple
+  description: "日常で役立つ技術的なtipsを調べて説明"
+  keywords: [技術, tips, 日常, 便利, ライフハック, IT]
   author: "Blog Author"
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -64,7 +64,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "ChatGPT調査結果ブログ"
+    text: "slightlysimple"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -85,8 +85,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "ChatGPT調査結果ブログへようこそ 👋"
-    Content: ChatGPTを活用した様々な調査結果をまとめています。AIの可能性を探求し、実践的な知見を共有するブログです。
+    Title: "slightlysimpleへようこそ 👋"
+    Content: 日常で役立つ技術的なtipsを調べて分かりやすく説明します。生活を少しだけ便利にする実践的な情報をお届けするブログです。
 
   socialIcons:
     - name: twitter

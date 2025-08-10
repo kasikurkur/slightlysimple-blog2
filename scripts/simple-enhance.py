@@ -84,11 +84,24 @@ def generate_meta_description(title, content):
 def suggest_tags_from_content(content):
     """内容から関連タグを提案"""
     tech_keywords = {
-        'ChatGPT': ['ChatGPT', 'AI', '人工知能'],
-        'AI': ['AI', '人工知能', '機械学習'],
+        'Windows': ['Windows', 'PC', 'Microsoft'],
+        'Mac': ['Mac', 'macOS', 'Apple'],
+        'Linux': ['Linux', 'Ubuntu', 'CentOS'],
         'プログラミング': ['プログラミング', '開発', 'コード'],
-        'ブログ': ['ブログ', 'ブログ運営', 'コンテンツ'],
-        'SEO': ['SEO', '検索エンジン', 'マーケティング'],
+        'SSH': ['SSH', 'セキュリティ', 'GitHub'],
+        'Git': ['Git', 'GitHub', 'バージョン管理'],
+        'Python': ['Python', 'プログラミング', 'スクリプト'],
+        'JavaScript': ['JavaScript', 'Web開発', 'フロントエンド'],
+        'HTML': ['HTML', 'Web開発', 'マークアップ'],
+        'CSS': ['CSS', 'スタイリング', 'デザイン'],
+        'Docker': ['Docker', 'コンテナ', 'DevOps'],
+        'VSCode': ['VSCode', 'エディタ', '開発環境'],
+        'Chrome': ['Chrome', 'ブラウザ', 'Web'],
+        'Excel': ['Excel', 'Office', '業務効率'],
+        'PowerShell': ['PowerShell', 'Windows', 'コマンドライン'],
+        'Terminal': ['Terminal', 'コマンドライン', 'CLI'],
+        'VPN': ['VPN', 'セキュリティ', 'ネットワーク'],
+        'WiFi': ['WiFi', 'ネットワーク', '無線LAN'],
     }
     
     suggested_tags = set()
