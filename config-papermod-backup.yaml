@@ -1,7 +1,7 @@
 baseURL: 'https://slightlysimple.net'
 languageCode: 'ja-jp'
 title: 'slightlysimple'
-theme: 'PaperMod'
+theme: 'congo'
 
 enableRobotsTXT: true
 buildDrafts: false

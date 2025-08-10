@@ -1,0 +1,13 @@
+[goldmark]
+  [goldmark.renderer]
+    unsafe = true
+
+[highlight]
+  lineNos = false
+  lineNumbersInTable = false
+  noClasses = false
+
+[tableOfContents]
+  endLevel = 4
+  ordered = false
+  startLevel = 2

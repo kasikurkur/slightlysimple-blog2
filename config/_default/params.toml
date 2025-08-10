@@ -1,0 +1,71 @@
+# -- Theme Options --
+# slightlysimple - Cool Tech Tips Blog Configuration
+
+colorScheme = "slate" # modern dark theme
+defaultAppearance = "dark" # start with dark mode
+autoSwitchAppearance = true
+
+# Modern features
+enableSearch = true
+enableCodeCopy = true
+enableImageLazyLoading = true
+enableImageWebp = true
+enableQuicklink = true
+
+fingerprintAlgorithm = "sha256"
+
+[header]
+  layout = "basic"
+  showTitle = true
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "page"
+  showRecent = true
+  recentLimit = 8
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = true
+  editURL = "https://github.com/kasikurkur/slightlysimple-blog2/tree/main/content/"
+  editAppendPath = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = true
+  showComments = false
+  sharingLinks = ["x-twitter", "reddit", "linkedin", "email"]
+
+[list]
+  showBreadcrumbs = true
+  showSummary = true
+  showTableOfContents = false
+  showTaxonomies = true
+  groupByYear = false
+  paginationWidth = 1
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+
+# Analytics (placeholder - will be updated when ready)
+# [googleAnalytics]
+#   id = "G-XXXXXXXXXX"
+
+[verification]
+  # google = ""
+  # bing = ""

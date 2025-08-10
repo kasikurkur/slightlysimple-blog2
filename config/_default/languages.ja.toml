@@ -1,0 +1,19 @@
+languageCode = "ja-JP"
+languageName = "日本語"
+weight = 1
+
+[params]
+  displayName = "JA"
+  isoCode = "ja-JP"
+  rtl = false
+  dateFormat = "2006年1月2日"
+  
+  # Japanese-specific parameters
+  description = "日常で役立つ技術的なtipsを調べて説明"
+  keywords = ["技術", "tips", "日常", "便利", "ライフハック", "IT", "ガジェット", "仮想通貨", "AI"]
+  
+  [params.author]
+    name = "slightlysimple"
+    links = [
+      { github = "https://github.com/kasikurkur" }
+    ]
