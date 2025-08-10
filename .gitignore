@@ -42,3 +42,27 @@ node_modules/
 # Temporary files
 tmp/
 temp/
+
+# 機密情報ファイル
+*.env
+*.env.local
+*.env.production
+.env*
+
+# API キーや認証情報
+secrets/
+.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+
+# データベースファイル
+*.db
+*.sqlite
+*.sqlite3
+
+# Python仮想環境
+venv/
+env/
+.venv/
