@@ -8,6 +8,21 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+# SEO設定
+sitemap:
+  changefreq: 'weekly'
+  priority: 0.5
+  filename: 'sitemap.xml'
+
+# RSS設定
+rss:
+  limit: 10
+
+# タクソノミー設定
+taxonomies:
+  tag: tags
+  category: categories
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -79,6 +94,16 @@ params:
     - name: github
       url: "https://github.com/"
 
+  # Google Analytics 設定（GA4）
+  googleAnalytics: "G-XXXXXXXXXX" # 実際のGA4測定IDに置き換えてください
+  
+  # Google AdSense 設定
+  adsense:
+    enabled: false # AdSense承認後にtrueに変更
+    client: "ca-pub-XXXXXXXXXX" # 実際のAdSenseクライアントIDに置き換え
+    inArticleSlot: "XXXXXXXXXX" # 記事内広告スロットID
+    sidebarSlot: "XXXXXXXXXX"   # サイドバー広告スロットID
+  
   analytics:
     google:
       SiteVerificationTag: "XYZabc"

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
+# 管理画面やプライベートページをブロック
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# 検索エンジンにインデックスしてほしくないページ
+Disallow: /404.html
