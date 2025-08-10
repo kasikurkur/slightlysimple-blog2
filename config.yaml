@@ -31,7 +31,7 @@ params:
   env: production
   title: slightlysimple
   description: "日常で役立つ技術的なtipsを調べて説明"
-  keywords: [技術, tips, 日常, 便利, ライフハック, IT]
+  keywords: [技術, tips, 日常, 便利, ライフハック, IT, ガジェット, 仮想通貨, AI]
   author: "Blog Author"
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
