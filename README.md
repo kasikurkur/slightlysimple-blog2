@@ -34,8 +34,8 @@ blog-site/
 
 ### 2. リポジトリクローン
 ```bash
-git clone https://github.com/ユーザー名/blog-site.git
-cd blog-site
+git clone https://github.com/kasikurkur/slightlysimple-blog2.git
+cd slightlysimple-blog2
 git submodule update --init --recursive
 ```
 
