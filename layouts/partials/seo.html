@@ -1,0 +1,75 @@
+{{- /* SEO最適化 - 構造化データとメタタグ */ -}}
+
+{{- /* Open Graph */ -}}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Language.Params.description }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:locale" content="ja_JP" />
+
+{{- /* Twitter Cards */ -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Language.Params.description }}{{ end }}{{ end }}" />
+
+{{- /* JSON-LD 構造化データ */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .IsHome }}WebSite{{ else if .IsPage }}BlogPosting{{ else }}Blog{{ end }}",
+  {{ if .IsHome }}
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Language.Params.description }}",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+  {{ else if .IsPage }}
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05+09:00" }}",
+  {{ with .Lastmod }}
+  "dateModified": "{{ .Format "2006-01-02T15:04:05+09:00" }}",
+  {{ end }}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Site.Language.Params.Author.name }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "wordCount": {{ .WordCount }},
+  "keywords": [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ . }}"{{ end }}]
+  {{ else }}
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Language.Params.description }}",
+  "url": "{{ .Permalink }}"
+  {{ end }}
+}
+</script>
+
+{{- /* 追加のメタタグ */ -}}
+<meta name="keywords" content="{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}{{ . }}{{ end }}{{ if .Params.tags }}, {{ end }}{{ range $index, $keyword := .Site.Language.Params.keywords }}{{ if $index }}, {{ end }}{{ $keyword }}{{ end }}" />
+<meta name="author" content="{{ .Site.Language.Params.Author.name }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{- /* 言語とローカライゼーション */ -}}
+<meta name="language" content="Japanese" />
+<meta name="geo.region" content="JP" />
+<meta name="geo.country" content="Japan" />
+
+{{- /* パフォーマンス関連 */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com" />
