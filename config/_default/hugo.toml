@@ -10,6 +10,28 @@ title = "slightlysimple"
 enableRobotsTXT = true
 summaryLength = 0
 
+# Google Analytics 4
+googleAnalytics = "G-SGF8XSBXGP"
+
+# SEO and Performance optimization
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    lineNos = true
+    style = "github"
+
+[minify]
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+    [minify.tdewolff.css]
+      decimals = -1
+    [minify.tdewolff.js]
+      keepVarNames = false
+
 [pagination]
   pagerSize = 10
 

@@ -62,10 +62,11 @@ fingerprintAlgorithm = "sha256"
 [taxonomy]
   showTermCount = true
 
-# Analytics (placeholder - will be updated when ready)
-# [googleAnalytics]
-#   id = "G-XXXXXXXXXX"
+# Google Analytics 4
+[googleAnalytics]
+  id = "G-SGF8XSBXGP"
 
 [verification]
-  # google = ""
-  # bing = ""
+  # Google Search Console verification (will be updated when available)
+  # google = "google-search-console-verification-code"
+  # bing = "bing-webmaster-tools-verification-code"

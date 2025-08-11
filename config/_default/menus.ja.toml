@@ -22,3 +22,18 @@
   name = "About"
   pageRef = "/about"
   weight = 50
+
+[[main]]
+  name = "お問い合わせ"
+  pageRef = "/contact"
+  weight = 60
+
+[[main]]
+  name = "プライバシーポリシー"
+  pageRef = "/privacy"
+  weight = 70
+
+[[main]]
+  name = "運営者情報"
+  pageRef = "/operator"
+  weight = 80

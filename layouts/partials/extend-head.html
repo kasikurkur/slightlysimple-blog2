@@ -1,3 +1,6 @@
+{{- /* SEO最適化 */ -}}
+{{ partial "seo.html" . }}
+
 {{- /* Google AdSense */ -}}
 {{- if .Site.Params.adsense.enabled -}}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense.client }}" 
@@ -5,13 +8,13 @@
 {{- end -}}
 
 {{- /* Google Analytics */ -}}
-{{- if .Site.Params.googleAnalytics -}}
+{{- with .Site.Config.Services.GoogleAnalytics.ID | default .Site.Params.googleAnalytics.id -}}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '{{ .Site.Params.googleAnalytics }}');
+  gtag('config', '{{ . }}');
 </script>
 {{- end -}}
